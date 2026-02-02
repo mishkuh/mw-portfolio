@@ -9,30 +9,6 @@ const projects = [
     tags: ["React", "Node.js", "Next.js", "Tailwind", "Motion", "NeonDB", "Vercel"],
     demoUrl: "https://www.ggenerationlandscaping.com/",
     githubUrl: "https://github.com/mishkuh/green-generation-landscaping",
-  },
-  {
-    id: 2,
-    title: "Prime Video X-Ray",
-    description: "",
-    tags: ["React", "TypeScript", "Storybook", "Tailwind"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Prime Video X-Ray",
-    description: "",
-    tags: ["React", "TypeScript", "Storybook", "Tailwind"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 4,
-    title: "Prime Video X-Ray",
-    description: "",
-    tags: ["React", "TypeScript", "Storybook", "Tailwind"],
-    demoUrl: "#",
-    githubUrl: "#",
   }
 ];
 
