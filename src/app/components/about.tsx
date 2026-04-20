@@ -1,4 +1,6 @@
-import { BlurScrollContainer } from "./animations";  
+import { BlurScrollContainer } from "./animations";
+import Image from "next/image";
+import portrait from "@/public/images/portrait_md.png"
 
 export function About() {
   return (
@@ -12,29 +14,40 @@ export function About() {
         <BlurScrollContainer>
           <h2 className="text-4xl md:text-5xl mb-12 text-center">About Me</h2>
 
-          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-xl">
-            <p className="text-lg leading-relaxed mb-6">
-              I'm a passionate developer and designer with a keen eye for detail and a love for
-              creating seamless user experiences. With expertise in modern web technologies,
-              I bring ideas to life through thoughtful design and clean code.
-            </p>
+          <div className="flex md:flex-row flex-col bg-card border border-border rounded-2xl p-8 md:p-12 shadow-xl">
+            <div className="relative overflow-hidden md:w-[100%] h-[400px]">
+              <Image
+                src={portrait}
+                alt="About Me"
+                fill
+                quality={90}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col pl-8">
+              <p className="text-lg leading-relaxed mb-6">
+                I'm a passionate developer and designer with a keen eye for detail and a love for
+                creating seamless user experiences. With expertise in modern web technologies,
+                I bring ideas to life through thoughtful design and clean code.
+              </p>
 
-            <p className="text-lg leading-relaxed mb-6">
-              My approach combines aesthetic sensibility with technical precision, ensuring that
-              every project not only looks beautiful but also performs flawlessly. I believe in
-              the power of simplicity and the importance of user-centered design.
-            </p>
+              <p className="text-lg leading-relaxed mb-6">
+                My approach combines aesthetic sensibility with technical precision, ensuring that
+                every project not only looks beautiful but also performs flawlessly. I believe in
+                the power of simplicity and the importance of user-centered design.
+              </p>
 
-            <p className="text-lg leading-relaxed">
-              When I'm not coding, you can find me exploring design trends, on{' '}
-              <a
-                href="https://www.airbnb.com/h/caphillhideaway"
-                className="underline underline-offset-4 hover:text-primary transition-colors"
-              >
-                superhost duty
-              </a>
-              , getting buckets on the court, or scheming up my next big idea with some jasmine green tea.
-            </p>
+              <p className="text-lg leading-relaxed">
+                When I'm not coding, you can find me exploring design trends, on{' '}
+                <a
+                  href="https://www.airbnb.com/h/caphillhideaway"
+                  className="underline underline-offset-4 hover:text-primary transition-colors"
+                >
+                  superhost duty
+                </a>
+                , getting buckets on the court, or scheming up my next big idea with some jasmine green tea.
+              </p>
+            </div>
           </div>
         </BlurScrollContainer>
       </div>
